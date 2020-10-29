@@ -2,6 +2,7 @@ const express = require('express');
 
 const endDatetime = process.env.END_DATEIME || 'Wed, 11 Nov 2020 16:00:00 GMT';
 const port = process.env.PORT || 8080;
+const app = express();
 
 app.get("/", async(req,res) => {
 	res.set({
