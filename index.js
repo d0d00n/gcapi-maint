@@ -9,7 +9,7 @@ app.get("/", async(req,res) => {
 		'retry-after': endDatetime
 	});
 	res.status(503);
-	res.json({message: 'The GC API Store in under maintenance. Please check retry-after header for when to try again. Le Magasin de API du GC est en cours de maintenance. Veuillez vérifier l\'en-tête retry-after pour savoir quand réessayer.'});
+	res.json({message: 'The GC API Store in under maintenance. Please check retry-after header for when to try again. Le Magasin des API du GC est en cours de entretien. Veuillez vérifier l\'en-tête «retry-after» pour savoir quand réessayer.'});
 });
 
 app.listen(port, function(){
